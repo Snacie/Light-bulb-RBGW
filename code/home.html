@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shelly Bulb Control</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Shelly Bulb Control</h1>
+    <p>OFF / ON</p>
+    <h2>Mode</h2>
+    <h3>Brightness</h3>
+    <h4>Colors</h4>
+    
+
+
+
+
+    <div class="glidbox">
+        <input type="range" min="1" max="100" value="50"class="glid" id="myRange" onmouseup="sliderchange()">
+    </div>
+
+    <div class="hide"> <p> <span id="demo"></span>%</p></div> 
+
+
+
+
+
+
+    <label class="mode1" onmouseup="white()">
+<input type="checkbox" id="white1"> 
+<span class="slider round1"></span>
+</label>
+
+
+<div class="colors">
+<DIV class="colorred">
+<input type="text" id="red" placeholder="red (0-255)" value="">
+<button id="buttonred" onclick="toggle3()">save</button>
+</DIV>
+
+<div class="colorgreen">
+<input type="text" id="green" placeholder="green (0-255)" value="">
+<button id="buttongreen" onclick="toggle4()">save</button>
+</div>
+
+<div class="colorblue">
+<input type="text" id="blue" placeholder="blue (0-255)" value="">
+<button id="buttonblue" onclick="toggle5()">save</button>
+</div>
+</div>
+
+<label class="switch" onmouseup="validate()">
+    <input type="checkbox" id="switcheroni">
+    <span class="slider round"></span>
+    
+
+
+
+  </label>
+
+
+ </body>
+    
+
+      <script src="test.js">
+    
+      </script>
+
+
+      </html>
+  
+

@@ -1,0 +1,241 @@
+/*Shelly web färger*/
+p {text-align: center;
+color: rgb(0, 0, 0);
+}
+h1 {color: rgb(153, 153, 153);
+text-align: center;}
+
+h2 {color: black;
+  position: absolute;
+  text-align: center;
+  top: 38%;
+  left: 48%;}
+
+h3 {color: black;
+position: absolute;
+text-align: center;
+left: 48%;
+top: 22%;
+}
+
+h4 {color: black;
+  position: absolute;
+  top: 46.5%;
+    left: 48%;
+  
+
+
+
+}
+
+
+body  {
+ background-color: rgb(77, 77, 77);
+}
+
+
+
+/* På och av Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 49.25%;
+    
+    
+    
+}
+  
+ 
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #fff129;
+    box-shadow: #fff129;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 100px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*Ljusslider*/
+
+.hide {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: -0.5%;
+  }
+  
+  .glidbox:hover + .hide {
+  display: block;
+  color: black;
+  appearance: slider-horizontal;
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .glid {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 255px; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    top: 28%;
+    position: absolute;
+    left: 46%;
+    border-radius: 25px;
+
+  }
+  
+  /* Mouse-over effects */
+  .glid:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .glid::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #020202; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .glid::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #0e0f0f; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 25px;
+  }
+
+
+/*colormode knapp*/
+
+.mode1 {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 48.2%;
+top: 42.725125%;
+ 
+  
+  
+  
+}
+
+
+.mode1 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+
+.slider.round1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider.round1:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 252, 252);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider.round1 {
+  background-color: #2998ff;
+  box-shadow: #43f8e9;
+}
+
+input:checked + .slider.round1:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round1 {
+  border-radius: 100px;
+}
+
+.slider.round1:before {
+  border-radius: 50%;;
+
+}
+
+/*colorpicker*/
+
+.colors {
+
+position:absolute;
+top: 50%;
+left:45.5%;
+}
+
+.colorred {
+  box-shadow: red;
+}
